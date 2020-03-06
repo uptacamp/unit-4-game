@@ -1,0 +1,178 @@
+body {
+    
+    background-color: #ffffff;
+    border-color: #dddddd;
+    font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color:#FFFFFF;
+    background-image: url("../images/Background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+
+ header {
+    background-image: none;
+    background-color: #ffffff;
+    border-color: #cccccc;
+    margin: auto;
+    overflow: auto;
+    clear: both;
+    width: 960px;
+    height: auto;
+       }
+
+  .header_nav {
+      float: right; 
+         
+  }
+
+footer {
+    
+    background-color: #4aaaa5;
+    text-align: center;
+    color: #FFF;
+    border-top: 5px solid #dddddd;
+   
+}
+
+h1 {
+    background-color: #4aaaa5;
+    color: white;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    float:center;
+    padding: 10px;
+    margin: 0px;
+    text-align: center;
+    
+            
+}
+
+h2 {
+    color:#2be7de;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-bottom: 20px;
+    
+    text-align:center;
+    }
+
+
+    
+
+p {
+    color: blue;
+    letter-spacing: 3px;
+}
+
+td {
+    height: 20px;
+}
+
+#reset_button{
+    visibility: hidden;
+}
+
+.header_links {
+    
+    display: inline-block;
+    padding: 20px 10px 5px 10px;
+    color:#777777;
+    text-decoration: none;
+    
+   
+}
+
+
+.content-background {
+   
+    border-top: 2px solid #dddddd;
+    padding: 20px; 50px 50px 50px;
+         }
+
+.content {
+
+   
+   
+    width: 960px;
+   
+    padding: 15px;
+    margin: auto;
+    
+    
+}
+
+.first_pic {
+    float:left;
+    padding:    0px 20px 0px 20px;
+    }
+
+   
+ .available_character {
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-color: white;
+    margin: 15px;
+    height: 200px;
+    width: 170px;
+    border: 1px solid #e9dbdb;
+    display: inline-block;
+    text-align: center;
+    }
+
+    .selected_character {
+        background-image: url("");
+        background-repeat: no-repeat;
+        background-color: green;
+        margin: 15px;
+        height: 200px;
+        width: 170px;
+        border: 1px solid #e9dbdb;
+        display: inline-block;
+        text-align: center;
+        }
+
+.available_enemy {
+        background-image: url("");
+        background-repeat: no-repeat;
+        background-color: red;
+        margin: 15px;
+        height: 200px;
+        width: 170px;
+        border: 1px solid #e9dbdb;
+        display: inline-block;
+        text-align: center;
+        }
+
+.defender {
+        background-image: url("");
+        background-repeat: no-repeat;
+        background-color: black;
+        margin: 15px;
+        height: 200px;
+        width: 170px;
+        border: 1px solid #e9dbdb;
+        display: inline-block;
+        text-align: center;
+        }
+
+    
+
+ .character a {
+        background-color: #4aaaa5;
+        color: white;
+        font-family: 'Georgia', Times, Times New Roman, serif;
+        margin: 0px;
+        text-decoration: none;
+        display: inline-block;
+        height: 30px;
+        width: 250px;
+        margin-top: 140px;
+        padding-top: 2px;
+        
+            }
+    
+.submit {
+    background-color: #4aaaa5;
+    color: white;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    margin: 10px 0px; 10px 0px; 
+}

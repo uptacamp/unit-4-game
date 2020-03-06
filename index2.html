@@ -1,0 +1,92 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css"href="assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css"href="assets/css/style.css">
+    <script type="text/javascript" src="assets/javascript/jquery.js"> </script>
+    <script src="assets/javascript/game.js"></script>
+    
+
+		
+
+
+</head>
+<body>
+    
+  
+
+    <div class="content-background">
+        <div class="content">
+                    
+           
+           <h2>Star Wars RPG</h2>
+           
+            <table>
+                <th></th>
+                <tr>
+                        <td id = "available_character">
+                            <div class = "available_character" id = "obi_wan">
+                               <p>Obi Wan</p>
+                            </div>
+
+                            <div class = "available_character" id = "luke_skywalker">
+                                <p>Luke Skywalker</p>
+                             </div>
+
+                             <div class = "available_character" id = "darth_sidious">
+                                <p>Darth Sidious</p>
+                             </div>
+
+                             <div class = "available_character" id = "darth_maul">
+                                <p>Darth Maul</p>
+                             </div>
+
+                        </td>
+                    </tr>
+                <tr>
+                    <td>Your Character:</td>
+                </tr>
+                <tr>
+                    <td id="my_character"></td>
+                </tr>
+                <tr>
+                    <td>Enemies:</td>
+                </tr>
+                <tr>
+                    <td id="enemies"></td>
+                </tr>
+                <tr>
+                    <td>Fight Section: <br>
+                         <button id="attack_button">Attack</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Defender:</td>
+                </tr>
+                <tr>
+                    <td> </td>
+                </tr>
+                <tr>
+                        <td><button id="reset_button">Restart</button></td>
+                    </tr>
+            </table>
+
+        </div>
+    </div>
+
+    
+
+    <script>
+            window.onkeypress = function() {UserInput()}; 
+    </script> 
+   
+</body>
+
+
+   
+  
+
+
+
+
+
+</html>   
