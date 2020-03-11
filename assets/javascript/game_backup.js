@@ -27,7 +27,7 @@ let darth_maul = {
 
 
 var my_character = "";
-var my_opponent = "";
+
 
 function SelectEnemy() {
   //moves enemy to defender section/ set color to black
@@ -57,16 +57,21 @@ $(document).ready(function () {
 
   
   $(".available_character").click(function () {
+   
+    if(my_character) {
+      console.log("already selected");
+      return;
+    }
+    
     my_character = $(this).attr("id");
-    console.log("my character selected");
+    console.log($(this).attr("class"));
     $(this).removeClass();
     $(this).addClass("selected_character");
     $(".selected_character").appendTo(".my_character");
     $(".available_character").addClass("available_enemy");
     $(".available_enemy").appendTo("#enemies");
     $(".available_enemy").removeClass("available_character");
-    $(".available_character").off();
-   
+   console.log($(".available_enemy"));
   });
 
 
