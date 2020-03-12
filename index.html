@@ -19,28 +19,29 @@
                     
            
            <h2>Star Wars RPG</h2>
-           
+           <button id="reset_button">Restart</button>
             <table>
                 <th></th>
                 <tr>
                         <td>
                             <div class = "available_character" id = "obi_wan">
-                               <p>Obi Wan</p>
+                               <p id="obi_wan_hp">Obi Wan</p>
                             </div>
 
                             <div class = "available_character" id = "luke_skywalker">
-                                <p>Luke Skywalker</p>
+                                <p id="luke_skywalker_hp">Luke Skywalker</p>
                              </div>
 
                              <div class = "available_character" id = "darth_sidious">
-                                <p>Darth Sidious</p>
+                                <p id="darth_sidious_hp">Darth Sidious</p>
                              </div>
 
                              <div class = "available_character" id = "darth_maul">
-                                <p>Darth Maul</p>
+                                <p id="darth_maul_hp">Darth Maul</p>
                              </div>
 
                         </td>
+                        
                     </tr>
                 <tr>
                     <td>My Character:</td>
@@ -54,24 +55,20 @@
                 <tr>
                     <td id="enemies"> 
                     
-                         <!-- Debug    <div class = "available_enemy" id = "darth_maul">
-                                    <p>Darth Maul</p>
-                            </div>  -->
+                          
                     </td>
                 </tr>
-                <tr>
-                    <td>Fight Section: <br>
-                         <button id="attack_button">Attack</button>
-                    </td>
-                </tr>
+                
                 <tr>
                     <td>Defender:</td>
                 </tr>
                 <tr>
-                    <td> </td>
+                    <td><div class="opponent_section"></div> </td>
                 </tr>
                 <tr>
-                        <td><button id="reset_button">Restart</button></td>
+                        <td> <button id="attack_button" class="button_hidden">Attack</button> 
+                            <span id="attack_result"></span>
+                        </td>
                     </tr>
             </table>
 

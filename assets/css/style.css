@@ -6,7 +6,7 @@ body {
     color:#FFFFFF;
     background-image: url("../images/Background.jpg");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 110%;
 
 }
 
@@ -40,7 +40,7 @@ h1 {
     color: white;
     font-family: 'Georgia', Times, Times New Roman, serif;
     float:center;
-    padding: 10px;
+    padding: 0px;
     margin: 0px;
     text-align: center;
     
@@ -59,8 +59,15 @@ h2 {
     
 
 p {
-    color: blue;
+    color: black;
     letter-spacing: 3px;
+    margin-top: 175px;
+}
+
+span {
+    color: white;
+    margin-left: 10px;
+    
 }
 
 td {
@@ -68,7 +75,7 @@ td {
 }
 
 #reset_button{
-    visibility: hidden;
+    float: right;
 }
 
 .header_links {
@@ -100,10 +107,7 @@ td {
     
 }
 
-.first_pic {
-    float:left;
-    padding:    0px 20px 0px 20px;
-    }
+
 
    
  .available_character {
@@ -121,7 +125,7 @@ td {
     .selected_character {
         background-image: url("");
         background-repeat: no-repeat;
-        background-color: green;
+        background-color: white;
         margin: 15px;
         height: 200px;
         width: 170px;
@@ -133,7 +137,7 @@ td {
 .available_enemy {
         background-image: url("");
         background-repeat: no-repeat;
-        background-color: red;
+        background-color: white;
         margin: 15px;
         height: 200px;
         width: 170px;
@@ -141,6 +145,37 @@ td {
         display: inline-block;
         text-align: center;
         }
+
+
+        .opponent {
+            background-image: url("");
+            background-repeat: no-repeat;
+            background-color: white;
+            margin: 15px;
+            height: 200px;
+            width: 170px;
+            border: 1px solid #e9dbdb;
+            display: inline-block;
+            text-align: center;
+            }
+
+
+
+
+#obi_wan {
+    background-image: url("../images/obi_wan.jpg");
+}
+#luke_skywalker {
+    background-image: url("../images/luke.jpg");
+}
+#darth_maul {
+    background-image: url("../images/darth_maul.jpg");
+}
+
+#darth_sidious {
+    background-image: url("../images/darth_sidious.jpg");
+}
+ 
 
 .defender {
         background-image: url("");
@@ -176,3 +211,11 @@ td {
     font-family: 'Georgia', Times, Times New Roman, serif;
     margin: 10px 0px; 10px 0px; 
 }
+
+.button_hidden{
+    visibility: hidden;
+}
+
+.button_visible {
+    visibility: visible;
+    }
