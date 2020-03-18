@@ -100,7 +100,7 @@ var game = {
 
   Attack: function () {
     console.log("attacking");
-    let str_attack_message = characters[my_character_index].name + " attacks, causing " + my_attack_power + " damage. " + characters[my_opponent_index].name + " counterattacks, causing " + characters[my_opponent_index].counter_attack_power + " damage.";
+    let str_attack_message = "You have attacked, causing " + my_attack_power + " damage. " + characters[my_opponent_index].name + " counterattacks, causing " + characters[my_opponent_index].counter_attack_power + " damage.";
     $("#attack_result").text(str_attack_message);
     game.CalculateHP();
   },
