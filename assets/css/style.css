@@ -61,7 +61,7 @@ h2 {
 p {
     color: black;
     letter-spacing: 3px;
-    margin-top: 175px;
+    margin-top: 5px;
 }
 
 span {
@@ -107,8 +107,6 @@ td {
     
 }
 
-
-
    
  .available_character {
     background-image: url("");
@@ -116,7 +114,7 @@ td {
     background-color: white;
     margin: 15px;
     height: 200px;
-    width: 170px;
+    width: 175px;
     border: 1px solid #e9dbdb;
     display: inline-block;
     text-align: center;
@@ -128,7 +126,7 @@ td {
         background-color: white;
         margin: 15px;
         height: 200px;
-        width: 170px;
+        width: 175px;
         border: 1px solid #e9dbdb;
         display: inline-block;
         text-align: center;
@@ -140,7 +138,7 @@ td {
         background-color: white;
         margin: 15px;
         height: 200px;
-        width: 170px;
+        width: 175px;
         border: 1px solid #e9dbdb;
         display: inline-block;
         text-align: center;
@@ -153,7 +151,7 @@ td {
             background-color: white;
             margin: 15px;
             height: 200px;
-            width: 170px;
+            width: 175px;
             border: 1px solid #e9dbdb;
             display: inline-block;
             text-align: center;
@@ -162,32 +160,6 @@ td {
 
 
 
-#obi_wan {
-    background-image: url("../images/obi_wan.jpg");
-}
-#luke_skywalker {
-    background-image: url("../images/luke.jpg");
-}
-#darth_maul {
-    background-image: url("../images/darth_maul.jpg");
-}
-
-#darth_sidious {
-    background-image: url("../images/darth_sidious.jpg");
-}
- 
-
-.defender {
-        background-image: url("");
-        background-repeat: no-repeat;
-        background-color: black;
-        margin: 15px;
-        height: 200px;
-        width: 170px;
-        border: 1px solid #e9dbdb;
-        display: inline-block;
-        text-align: center;
-        }
 
     
 
