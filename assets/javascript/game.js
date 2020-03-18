@@ -81,7 +81,7 @@ var game = {
     $("#remaining_enemies_header").toggleClass("section_header_visible");
     $("#game_characters_header").removeClass();
     $("#game_characters_header").addClass("section_header_hidden");
-    $('#attack_result').text("Select an Enemy")
+    $('#attack_result').text("Select an enemy to battle")
   },
 
   SelectEnemy: function () {
@@ -93,8 +93,9 @@ var game = {
     $(this).addClass("opponent");
     $(".opponent").appendTo("#my_opponent");
     $("#attack_button").toggleClass("button_visible");
-    $("#battle_opponent_header").toggleClass("section_header_visible");
-    $("#attack_result").text("Enemy selected. Press Attack button to attack.");
+    $("#battle_opponent_header").removeClass();
+    $("#battle_opponent_header").addClass("section_header_visible");
+    $("#attack_result").text(characters[my_opponent_index].name + " selected as battle opponent. Press Attack button to attack.");
 
   },
 
@@ -123,7 +124,7 @@ var game = {
       characters[my_opponent_index].health_points = 0
       $('#my_opponent').empty();
       $('#my_character').empty().append("<div class='selected_character'" + "id=" + characters[my_character_index].id + ">" + "<img src=" + characters[my_character_index].image + ">" + "<p>" + characters[my_character_index].health_points + "</p>" + "</div>")
-      $("#attack_result").text("You have defeated " + characters[my_opponent_index].name + ". Select a new enemy to continue");
+      $("#attack_result").text("You have defeated " + characters[my_opponent_index].name + ". Select a new enemy to battle");
       $("#attack_button").toggleClass("button_visible");
 
      //no enemies remain, game over
