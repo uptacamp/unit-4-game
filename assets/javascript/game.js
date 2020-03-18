@@ -63,7 +63,8 @@ var game = {
       game.CreateCharacterCards(i);
     }
     console.log("character cards created");
-
+    $('#attack_result').text("Select a Player");
+   
   },
 
   SelectPlayer: function () {
@@ -76,6 +77,11 @@ var game = {
     $(".available_character").addClass("available_enemy");
     $(".available_enemy").appendTo("#enemies");
     $(".available_enemy").removeClass("available_character");
+    $("#my_character_header").toggleClass("section_header_visible");
+    $("#remaining_enemies_header").toggleClass("section_header_visible");
+    $("#game_characters_header").removeClass();
+    $("#game_characters_header").addClass("section_header_hidden");
+    $('#attack_result').text("Select an Enemy")
   },
 
   SelectEnemy: function () {
@@ -87,7 +93,9 @@ var game = {
     $(this).addClass("opponent");
     $(".opponent").appendTo("#my_opponent");
     $("#attack_button").toggleClass("button_visible");
+    $("#battle_opponent_header").toggleClass("section_header_visible");
     $("#attack_result").text("Enemy selected. Press Attack button to attack.");
+
   },
 
   Attack: function () {

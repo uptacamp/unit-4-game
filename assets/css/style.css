@@ -26,6 +26,8 @@ body {
          
   }
 
+ 
+
 footer {
     
     background-color: #4aaaa5;
@@ -159,10 +161,6 @@ td {
 
 
 
-
-
-    
-
  .character a {
         background-color: #4aaaa5;
         color: white;
@@ -191,3 +189,12 @@ td {
 .button_visible {
     visibility: visible;
     }
+
+    
+    .section_header_hidden{
+        visibility: hidden;
+    }
+
+    .section_header_visible{
+        visibility: visible;
+    } 
