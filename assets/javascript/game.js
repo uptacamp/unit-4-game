@@ -87,7 +87,7 @@ var game = {
   SelectEnemy: function () {
     $('#enemies').off('click', '.available_enemy');
     my_opponent_index = $(this).attr("id");
-    opponent_attack_power = characters[my_opponent_index].attack_power
+    opponent_attack_power = characters[my_opponent_index].counter_attack_power
     console.log("opponent selected");
     $(this).removeClass();
     $(this).addClass("opponent");
