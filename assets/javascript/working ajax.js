@@ -73,6 +73,8 @@ var game = {
       
     }
    
+   
+ 
     
     for (i = 0; i < characters.length; i++) {
       //game.CreateCharacterCards(i);
@@ -174,7 +176,6 @@ var game = {
         success: function(info){
           characters[i].birth_year = info.birth_year;
         console.log(characters[i].birth_year);
-        
           alert('AJAX successful');
         },
         error: function(){
