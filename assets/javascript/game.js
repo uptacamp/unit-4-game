@@ -69,7 +69,7 @@ var game = {
   SetupGame: function () {
     var i;
     for (i = 0; i < characters.length; i++) {
-      game.ApiCall(i);
+     // game.ApiCall(i);
       
     }
    
