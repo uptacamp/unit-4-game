@@ -9,8 +9,8 @@ var characters =
     name: "Obi Wan",
     image: 'assets/images/obi_wan.jpg',
     dead_image: 'assets/images/obi_wan_dead.jpg',
-    birth_year: "tbd",
-    swapiID: 10
+    birth_year: "tbd"
+   
   },
 
   {
@@ -21,8 +21,8 @@ var characters =
     name: "Luke Skywalker",
     image: 'assets/images/luke.jpg',
     dead_image: 'assets/images/luke_dead.jpg',
-    birth_year: "tbd",
-    swapiID: 1
+    birth_year: "tbd"
+    
   },
 
   {
@@ -33,8 +33,8 @@ var characters =
     name: "Darth Sidious",
     image: 'assets/images/darth_sidious.jpg',
     dead_image: 'assets/images/darth_sidious_dead.jpg',
-    birth_year: "tbd",
-    swapiID: 21
+    birth_year: "tbd"
+    
   },
 
   {
@@ -45,8 +45,8 @@ var characters =
     name: "Darth Maul",
     image: 'assets/images/darth_maul.jpg',
     dead_image: 'assets/images/darth_maul_dead.jpg',
-    birth_year: "tbd",
-    swapiID: 44
+    birth_year: "tbd"
+    
   }];
 
 var my_character = "";
@@ -63,19 +63,15 @@ var game = {
 
   CreateCharacterCards: function (i) {
 
-    $('#available_chars').append("<div class='available_character'" + "id=" + characters[i].id + ">" + "<img src=" + characters[i].image + ">" + "<p>" + characters[i].health_points +"/" + characters[i].birth_year + "</p>" + "</div>")
+    $('#available_chars').append("<div class='available_character'" + "id=" + characters[i].id + ">" + "<img src=" + characters[i].image + ">" + "<p>" + characters[i].health_points  + "</p>" + "</div>")
   },
 
   SetupGame: function () {
-    var i;
-    for (i = 0; i < characters.length; i++) {
-     // game.ApiCall(i);
-      
-    }
+  
    
-    
+    var i
     for (i = 0; i < characters.length; i++) {
-      //game.CreateCharacterCards(i);
+    game.CreateCharacterCards(i);
     }
     console.log("character cards created");
     $('#attack_result').text("Select a Player");
@@ -163,35 +159,9 @@ var game = {
 
   ResetGame: function () {
     location.reload();
-  },
-
-  ApiCall: function(i){
-    var restCall = 'https://swapi.co/api/people/' + characters[i].swapiID + "/";
-    console.log(restCall)
-
-    $.ajax({
-        url: restCall,
-        success: function(info){
-          characters[i].birth_year = info.birth_year;
-        console.log(characters[i].birth_year);
-        
-          alert('AJAX successful');
-        },
-        error: function(){
-          
-          alert('Error')
-        return false;}
-
-    }).then(function(info) {
-
-        game.CreateCharacterCards(i);
-        
-       
-  
-    })
-    
-    ;
   }
+
+  
 
 };
 
